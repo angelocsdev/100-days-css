@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#fff000, cyan);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 4.5em;
+    font-weight: bolder;
+}
+
+.art {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.art > p {
+    font-size: 0.5em;
+    font-weight: bolder;
+}
