@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(27, 27, 27);
+}
+
+.circulo {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #7DDFFC;
+    border-radius: 50%;
+    animation: ceu 4s infinite;
+}
+
+.sun {
+    position: absolute;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 10px;
+    left: 73px;
+    background-color: #FFEF00;
+    animation: sol 4s infinite;
+}
+
+.triangulo-1 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: 32px;
+    background-color: #F4F4F4;
+    clip-path: polygon(70% 20%, 0 100%, 100% 100%);
+    animation: triangulo 4s infinite;
+}
+
+.triangulo-2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: 88px;
+    background-color: rgb(0, 122, 122);
+    clip-path: polygon(0 20%, 30% 100%, 100% 100%);
+    animation: triangulo 4s infinite;
+}
+
+.areia {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    height: 80px;
+    bottom: 0;
+    background-color: #F0DE75;
+    animation: areia 4s infinite;
+}
+
+@keyframes ceu {
+    0% {
+        background-color: rgb(27, 27, 27);
+    }
+
+    30% {
+        background-color: #7DDFFC;
+    }
+
+    70% {
+        background-color: #7DDFFC;
+    }
+
+    100% {
+        background-color: rgb(27, 27, 27);
+    }
+}
+
+@keyframes sol {
+    0% {
+        background-color: rgb(27, 27, 27);
+    }
+
+    30% {
+        background-color: #FFEF00;
+    }
+
+    70% {
+        background-color: #FFEF00;
+    }
+
+    100% {
+        background-color: rgb(27, 27, 27);
+    }
+}
+
+@keyframes triangulo {
+    0% {
+        background-color: rgb(27, 27, 27);
+    }
+
+    30% {
+        background-color: #F4F4F4;
+    }
+
+    70% {
+        background-color: #F4F4F4;
+    }
+
+    100% {
+        background-color: rgb(27, 27, 27);
+    }
+}
+
+@keyframes areia {
+    0% {
+        background-color: rgb(27, 27, 27);
+    }
+
+    30% {
+        background-color: #F0DE75;
+    }
+
+    70% {
+        background-color: #F0DE75;
+    }
+
+    100% {
+        background-color: rgb(27, 27, 27);
+    }
+}
